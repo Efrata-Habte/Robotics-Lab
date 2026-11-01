@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'turn_away = my_robot_nodes.turn_away:main',
         ],
     },
 )
