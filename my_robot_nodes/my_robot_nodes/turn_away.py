@@ -5,16 +5,15 @@ The node starts switched off; switch it on with the /turn_away_enable service:
     ros2 service call /turn_away_enable std_srvs/srv/SetBool "{data: true}"
 """
 
-import rclpy
 from geometry_msgs.msg import Twist
 from lab_interfaces.msg import ObstacleInfo
+from my_robot_interfaces.msg import RobotStatus
+from my_robot_interfaces.srv import SetTurnSpeed
+import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 from rclpy.parameter import Parameter
 from std_srvs.srv import SetBool
-
-from my_robot_interfaces.msg import RobotStatus
-from my_robot_interfaces.srv import SetTurnSpeed
 
 FORWARD = 'forward'
 TURNING = 'turning'

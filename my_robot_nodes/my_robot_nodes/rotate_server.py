@@ -7,15 +7,14 @@ The angle is measured with the yaw from /odom. Try it with:
 
 import math
 
-import rclpy
 from geometry_msgs.msg import Twist
+from my_robot_interfaces.action import Rotate
 from nav_msgs.msg import Odometry
+import rclpy
 from rclpy.action import ActionServer, CancelResponse, GoalResponse
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import ExternalShutdownException, MultiThreadedExecutor
 from rclpy.node import Node
-
-from my_robot_interfaces.action import Rotate
 
 # How often the goal loop checks progress, in Hz
 LOOP_RATE = 20.0

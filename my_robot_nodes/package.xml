@@ -13,6 +13,12 @@
   <depend>std_srvs</depend>
   <depend>lab_interfaces</depend>
   <depend>my_robot_interfaces</depend>
+  <depend>action_msgs</depend>
+
+  <exec_depend>diffdrive_bot</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
